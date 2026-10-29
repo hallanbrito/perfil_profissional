@@ -1,3 +1,17 @@
+export interface EducationItem {
+  course: string;
+  institution: string;
+  period: string;
+  status: string;
+}
+
+export interface CertificationItem {
+  title: string;
+  issuer: string;
+  category: 'academica' | 'mercado';
+  tag?: string;
+}
+
 export interface ProfileData {
   name: string;
   fullName: string;
@@ -14,13 +28,8 @@ export interface ProfileData {
   linkedinUrl: string;
   avatarUrl: string;
   status: string;
-  education: Array<{
-    course: string;
-    institution: string;
-    period: string;
-    status: string;
-  }>;
-  certifications: string[];
+  education: EducationItem[];
+  certifications: CertificationItem[];
   stats: Array<{
     value: string;
     label: string;
@@ -66,11 +75,66 @@ export const profileData: ProfileData = {
     }
   ],
   certifications: [
-    "Foundational C# with Microsoft",
-    "Desenvolvimento Full-stack com Angular & .NET",
-    "LangChain Academy / LLMs",
-    "Clean Architecture & DDD na Prática",
-    "Análise Avançada de Dados com SQL e Power BI"
+    {
+      title: "Programação de Sistemas de Informação",
+      issuer: "UniFacid Wyden (Eng. de Software)",
+      category: "academica",
+      tag: "Sistemas & Arquitetura"
+    },
+    {
+      title: "Programação Para Internet",
+      issuer: "UniFacid Wyden (Eng. de Software)",
+      category: "academica",
+      tag: "Web & APIs"
+    },
+    {
+      title: "Aplicação da Melhoria Contínua",
+      issuer: "UniFacid Wyden (Eng. de Software)",
+      category: "academica",
+      tag: "Qualidade & Processos"
+    },
+    {
+      title: "Direitos e Privacidade dos Usuários",
+      issuer: "UniFacid Wyden (Eng. de Software)",
+      category: "academica",
+      tag: "LGPD & Segurança"
+    },
+    {
+      title: "Desenvolvimento de Projetos Sociais",
+      issuer: "UniFacid Wyden (Eng. de Software)",
+      category: "academica",
+      tag: "Impacto & Inovação"
+    },
+    {
+      title: "Análise de Problemas e Soluções para a Comunidade",
+      issuer: "UniFacid Wyden (Eng. de Software)",
+      category: "academica",
+      tag: "Resolução de Problemas"
+    },
+    {
+      title: "Foundational C# with Microsoft",
+      issuer: "Microsoft & freeCodeCamp",
+      category: "mercado",
+      tag: "C# / .NET"
+    },
+    {
+      title: "LangChain Academy / LLMs",
+      issuer: "LangChain",
+      category: "mercado",
+      tag: "IA & Agentes"
+    },
+    {
+      title: "Clean Architecture & DDD na Prática",
+      issuer: "Especialização Técnica",
+      category: "mercado",
+      tag: "Arquitetura Limpa"
+    },
+    {
+      title: "Análise Avançada de Dados com SQL e Power BI",
+      issuer: "Especialização em Dados",
+      category: "mercado",
+      tag: "SQL & BI"
+    }
   ],
   stats: [
     {
