@@ -31,25 +31,26 @@ export interface ProfileData {
 export const profileData: ProfileData = {
   name: "Hallan Brito",
   fullName: "Hallan de Sousa Brito",
-  role: "Engenheiro de Software & Especialista em Automação e IA",
-  badgeRole: "Back-end · IA Aplicada · Arquitetura Limpa",
+  role: "Engenheiro de Software Full-stack",
+  badgeRole: "Full-stack: C#/.NET + Angular · Python · IA Aplicada",
   pcdBadge: "PCD · TEA (Neurodivergente)",
   shortBio:
-    "Engenheiro de software e criador do Método Ágil C.H. Uno sólida vivência em operações, dados e logística a arquiteturas modernas de back-end em Python e C#/.NET, desenvolvendo soluções de automação, APIs robustas e esteiras humano-IA orientadas por evidência.",
+    "Engenheiro de software Full-stack com foco em C#/.NET e Angular, além de Python, Next.js e IA aplicada. Criador do Método Ágil C.H., uno mais de 14 anos de vivência em dados e processos à construção de sistemas ponta a ponta, desde APIs corporativas resilientes até interfaces modernas e responsivas.",
   fullBio: [
-    "Profissional com mais de 14 anos de vivência em processos, controle analítico de estoque e distribuição, graduado em Logística e em fase de conclusão do bacharelado em Engenharia de Software (UniFacid Wyden).",
-    "Como pessoa autista (PCD TEA), converto pensamento analítico apurado, reconhecimento de padrões complexos e hiperfoco na construção de sistemas confiáveis, com alta aderência a contratos de verdade, tipagem estrita e documentação clara.",
-    "Criador do Método Ágil C.H. (Colaboração Híbrida / ChatGPT-Hallan) e do framework CHDevFlow com CLI 'ch', estabelecendo um paradigma pioneiro para engenharia de software assistida por agentes inteligentes, onde o avanço é governado por fatias incrementais e evidências auditáveis."
+    "Engenheiro de Software Full-stack atuando no ciclo completo do desenvolvimento: desde a arquitetura de back-end em C#/.NET (ASP.NET Core, .NET 10 LTS) e Python (FastAPI, Django) até interfaces ricas e reativas com Angular (versão 22) e Next.js/React.",
+    "Com mais de 14 anos de vivência corporativa em processos, controle analítico de estoque e distribuição (Logística Anhanguera e bacharelado em Engenharia de Software na UniFacid Wyden), trago uma visão prática e estratégica para cada linha de código.",
+    "Como pessoa autista (PCD TEA), converto o hiperfoco e o reconhecimento agudo de padrões na entrega de sistemas consistentes, Clean Architecture, tipagem estrita e rigor contratual.",
+    "Criador do Método Ágil C.H. (Colaboração Híbrida / ChatGPT-Hallan) e do framework CHDevFlow com CLI 'ch', estabelecendo um paradigma pioneiro para engenharia assistida por IA governada por evidências auditáveis."
   ],
   location: "Teresina, PI — Brasil",
   email: "hallanbrito@gmail.com",
   phone: "(86) 99472-8426",
   whatsappLink:
-    "https://wa.me/5586994728426?text=Ol%C3%A1%20Hallan,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar!",
+    "https://wa.me/5586994728426?text=Ol%C3%A1%20Hallan,%20vi%20seu%20portf%C3%B3lio%20Full-stack%20e%20gostaria%20de%20conversar!",
   githubUrl: "https://github.com/hallanbrito",
   linkedinUrl: "https://www.linkedin.com/in/hallanbrito/",
   avatarUrl: "https://avatars.githubusercontent.com/u/113695320?v=4",
-  status: "Disponível para oportunidades em Engenharia de Software & IA",
+  status: "Disponível para oportunidades Full-stack (C#/.NET + Angular | Python)",
   education: [
     {
       course: "Bacharelado em Engenharia de Software",
@@ -66,11 +67,17 @@ export const profileData: ProfileData = {
   ],
   certifications: [
     "Foundational C# with Microsoft",
+    "Desenvolvimento Full-stack com Angular & .NET",
     "LangChain Academy / LLMs",
     "Clean Architecture & DDD na Prática",
     "Análise Avançada de Dados com SQL e Power BI"
   ],
   stats: [
+    {
+      value: "Full-stack",
+      label: "C#/.NET + Angular",
+      sublabel: "Domínio ponta a ponta: APIs de alta performance a SPAs modernas"
+    },
     {
       value: "14+",
       label: "Anos de Vivência Operacional",
@@ -85,11 +92,6 @@ export const profileData: ProfileData = {
       value: "C.H.",
       label: "Autor do Método C.H.",
       sublabel: "Governança pioneira em colaboração humano-IA"
-    },
-    {
-      value: "100%",
-      label: "Foco em Qualidade e Resiliência",
-      sublabel: "PCD TEA com hiperfoco em engenharia e conformidade"
     }
   ]
 };

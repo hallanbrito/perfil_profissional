@@ -9,27 +9,29 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Hallan de Sousa Brito | Engenheiro de Software · Back-end · Criador do Método C.H.',
+  title: 'Hallan de Sousa Brito | Engenheiro de Software Full-stack (C#/.NET + Angular)',
   description:
-    'Portfólio profissional de Hallan de Sousa Brito: Engenheiro de Software, PCD TEA, especialista em back-end (Python, FastAPI, C#/.NET, SQL), IA aplicada e autor do Método Ágil C.H.',
+    'Portfólio profissional de Hallan de Sousa Brito: Engenheiro de Software Full-stack (C#/.NET 10, Angular 22, Python, FastAPI), PCD TEA e criador do Método Ágil C.H.',
   keywords: [
     'Hallan Brito',
     'Hallan de Sousa Brito',
-    'Engenheiro de Software',
-    'Back-end Developer',
-    'Python',
-    'FastAPI',
+    'Engenheiro de Software Full-stack',
+    'Full-stack Developer',
     'C#',
     '.NET 10',
+    'Angular',
+    'Angular 22',
+    'TypeScript',
+    'Python',
+    'FastAPI',
     'Clean Architecture',
     'DDD',
     'Método Ágil C.H.',
     'CHDevFlow',
+    'PulseOps',
     'Maestro Router',
     'DriveHub API',
-    'PulseOps',
     'PCD TEA',
-    'Autismo',
     'Teresina Piauí'
   ],
   authors: [{ name: 'Hallan de Sousa Brito', url: 'https://github.com/hallanbrito' }],

@@ -1,9 +1,11 @@
-import { Server, Cpu, Layout, Database } from 'lucide-react';
+import { Server, Cpu, Layout, Database, Layers } from 'lucide-react';
 import { skillsData } from '@/data/skills';
 
 export function SkillsSection() {
   const getCategoryIcon = (iconName: string) => {
     switch (iconName) {
+      case 'Layers':
+        return <Layers className="w-5 h-5 text-blue-400" />;
       case 'Server':
         return <Server className="w-5 h-5 text-cyan-400" />;
       case 'Cpu':
@@ -13,7 +15,7 @@ export function SkillsSection() {
       case 'Database':
         return <Database className="w-5 h-5 text-amber-400" />;
       default:
-        return <Server className="w-5 h-5 text-cyan-400" />;
+        return <Layers className="w-5 h-5 text-blue-400" />;
     }
   };
 
@@ -24,13 +26,13 @@ export function SkillsSection() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 mb-3">
             <Cpu className="w-3.5 h-3.5 text-indigo-400" />
-            <span>Stack Tecnológica & Engenharia</span>
+            <span>Full-stack & Engenharia de Software</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
             Competências Técnicas
           </h2>
           <p className="text-slate-400 text-base mt-3">
-            Domínio abrangente desde arquitetura de microsserviços back-end e governança de IA até otimização analítica e processos de negócios.
+            Domínio ponta a ponta: ecossistema Full-stack com C#/.NET e Angular, microsserviços em Python, governança de IA e inteligência operacional.
           </p>
         </div>
 

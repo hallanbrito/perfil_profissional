@@ -11,47 +11,111 @@ export interface SkillCategory {
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Back-end & Arquitetura",
-    iconName: "Server",
-    color: "from-blue-500 to-cyan-500",
+    title: "Full-stack: C# / .NET + Angular",
+    iconName: "Layers",
+    color: "from-blue-600 to-indigo-600",
     skills: [
-      { name: "Python / FastAPI / Django", level: "Avançado", description: "APIs assíncronas, Clean Arch, DDD e orquestração de microsserviços" },
-      { name: "C# / .NET 10 LTS", level: "Sólido", description: "ASP.NET Core, APIs REST, LINQ, testes e sistemas corporativos" },
-      { name: "PostgreSQL / SQL Server", level: "Avançado", description: "Modelagem relacional, consultas complexas, integridade e performance" },
-      { name: "Arquitetura Hexagonal & DDD", level: "Sólido", description: "Desacoplamento de domínio, inversão de controle e regras de negócio puras" }
+      {
+        name: "C# / ASP.NET Core (.NET 10 LTS)",
+        level: "Especialidade",
+        description: "Desenvolvimento de APIs RESTful de alta performance, injeção de dependência, Entity Framework Core e LINQ"
+      },
+      {
+        name: "Angular 22 & TypeScript",
+        level: "Especialidade",
+        description: "Arquitetura com Standalone Components, Signals, RxJS, formulários reativos, roteamento e consumo de APIs back-end"
+      },
+      {
+        name: "Clean Architecture & DDD",
+        level: "Sólido",
+        description: "Separação de domínio e infraestrutura, Domain-Driven Design, testes unitários e boas práticas SOLID"
+      },
+      {
+        name: "PostgreSQL / SQL Server",
+        level: "Avançado",
+        description: "Modelagem relacional, migrations com EF Core, queries otimizadas e integridade referencial"
+      }
     ]
   },
   {
-    title: "IA Aplicada & Governança",
+    title: "Back-end, Python & IA Aplicada",
     iconName: "Cpu",
     color: "from-purple-500 to-pink-500",
     skills: [
-      { name: "Método Ágil C.H.", level: "Autor / Criador", description: "Framework de governança humano-IA, ciclo CHAVE e fatias de valor W" },
-      { name: "CHDevFlow & Ferramentas CLI", level: "Criador", description: "Esteiras de desenvolvimento híbrido com evidências auditáveis (RUC)" },
-      { name: "Integração LLMs / Roteamento", level: "Avançado", description: "Seleção determinística de rotas, controle de custo de tokens e LangChain" },
-      { name: "Engenharia de Prompt & Automação", level: "Avançado", description: "Workflows multiagente, delegação estrita e restrição de escopo" }
+      {
+        name: "Python (FastAPI & Django 5)",
+        level: "Avançado",
+        description: "APIs assíncronas, arquitetura limpa (Clean Arch), microsserviços e integração com bases relacionais"
+      },
+      {
+        name: "Método Ágil C.H. & CHDevFlow",
+        level: "Autor / Criador",
+        description: "Pioneirismo em esteiras de desenvolvimento humano-IA com governança do ciclo CHAVE e CLI 'ch'"
+      },
+      {
+        name: "Integração com LLMs & Roteamento",
+        level: "Avançado",
+        description: "Engenharia de prompts estruturada, LangChain, cálculo de tokens e roteamento inteligente (Maestro Router)"
+      },
+      {
+        name: "Testes Automatizados & CI/CD",
+        level: "Sólido",
+        description: "Cobertura com xUnit, Pytest, automação de checks e esteiras de auditoria com GitHub Actions"
+      }
     ]
   },
   {
-    title: "Front-end & Aplicações Modernas",
+    title: "Front-end Moderno & Ecossistema Web",
     iconName: "Layout",
     color: "from-emerald-500 to-teal-500",
     skills: [
-      { name: "Next.js 15 & React 19", level: "Avançado", description: "App Router, Server Components, SSR e arquiteturas reativas" },
-      { name: "TypeScript", level: "Avançado", description: "Tipagem estrita, contratos de dados seguros e refatoração confiável" },
-      { name: "Tailwind CSS", level: "Avançado", description: "Design systems modernos, interfaces dark mode e animações fluidas" },
-      { name: "Acessibilidade & Neurodesign", level: "Especialista", description: "Atenção a padrões WCAG, interfaces cognitivas e neurodiversidade" }
+      {
+        name: "Next.js 15 & React 19",
+        level: "Avançado",
+        description: "App Router, Server Components, SSR, hooks customizados e otimização para Web Vitals"
+      },
+      {
+        name: "Tailwind CSS & Design Systems",
+        level: "Avançado",
+        description: "Construção de layouts modernos 'Dark Tech', componentes responsivos, glassmorphism e animações"
+      },
+      {
+        name: "Acessibilidade & Neurodesign",
+        level: "Especialista",
+        description: "Foco em padrões de acessibilidade (a11y), interfaces com baixa carga cognitiva e neurodiversidade"
+      },
+      {
+        name: "Linux, Git & Ferramentas CLI",
+        level: "Avançado",
+        description: "Ambiente Linux diário, controle de versão estrito no GitHub, scripts bash e automações de desktop"
+      }
     ]
   },
   {
-    title: "Dados, Processos & Logística",
+    title: "Dados, Processos & Inteligência Logística",
     iconName: "Database",
     color: "from-amber-500 to-orange-500",
     skills: [
-      { name: "Power BI & Análise de Dados", level: "Avançado", description: "Modelagem dimensional, DAX e painéis analíticos para decisões táticas" },
-      { name: "SAP & Gestão de Inventário", level: "14+ anos", description: "Acompanhamento de estoque, faturamento, suprimentos e expedição" },
-      { name: "Otimização de Rotas e Fretes", level: "Especialista", description: "Simulação de itinerários, carregamento de veículos e redução de custos" },
-      { name: "Melhoria Contínua de Processos", level: "Avançado", description: "Identificação de ineficiências e substituição de tarefas manuais" }
+      {
+        name: "Power BI & Análise de Indicadores",
+        level: "Avançado",
+        description: "Modelagem dimensional, DAX avançado e painéis interativos para tomada de decisão gerencial"
+      },
+      {
+        name: "SAP & Gestão de Inventário",
+        level: "14+ anos",
+        description: "Ampla vivência em gestão de materiais, faturamento, conferência e distribuição estratégica"
+      },
+      {
+        name: "Otimização de Roteirização e Fretes",
+        level: "Especialista",
+        description: "Algoritmos e simuladores de carregamento de veículos para redução de custos de frete"
+      },
+      {
+        name: "Resolução Analítica de Problemas",
+        level: "PCD TEA",
+        description: "Capacidade analítica natural de identificar gargalos sistêmicos e propor soluções ponta a ponta"
+      }
     ]
   }
 ];

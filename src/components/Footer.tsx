@@ -17,7 +17,7 @@ export function Footer() {
                 {profileData.fullName}
               </span>
               <p className="text-xs text-slate-400">
-                Engenharia de Software · Back-end · Governança em IA
+                Engenharia de Software Full-stack · C#/.NET + Angular · IA
               </p>
             </div>
           </div>

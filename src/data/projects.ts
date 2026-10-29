@@ -64,11 +64,11 @@ export const projectsData: Project[] = [
     id: "pulseops",
     title: "PulseOps",
     category: "fullstack",
-    categoryLabel: "Full-stack & .NET",
+    categoryLabel: "Full-stack (C#/.NET + Angular)",
     description:
-      "Plataforma completa para monitoramento de disponibilidade HTTP e abertura automatizada de incidentes. Arquitetura moderna com ASP.NET Core no back-end e Angular 22 no front-end.",
-    highlight: "Monitoramento e incidentes em C#/.NET 10 LTS e Angular 22",
-    technologies: ["C#", ".NET 10 LTS", "Angular 22", "PostgreSQL", "Tailwind CSS"],
+      "Plataforma completa para monitoramento contínuo de disponibilidade HTTP e gestão proativa de incidentes. Arquitetura corporativa moderna com ASP.NET Core (.NET 10 LTS) no back-end e Angular 22 com TypeScript no front-end.",
+    highlight: "Ecossistema Full-stack vitrine: ASP.NET Core + Angular 22",
+    technologies: ["C#", ".NET 10 LTS", "Angular 22", "TypeScript", "PostgreSQL", "Clean Architecture"],
     repoUrl: "https://github.com/hallanbrito/PulseOps",
     featured: true
   },

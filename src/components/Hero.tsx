@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowRight, Sparkles, Terminal, MessageSquare, ShieldCheck, Cpu } from 'lucide-react';
+import { ArrowRight, Sparkles, Terminal, MessageSquare, ShieldCheck, Cpu, Layers } from 'lucide-react';
 import { profileData } from '@/data/profile';
 
 export function Hero() {
@@ -18,7 +18,12 @@ export function Hero() {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">
                 <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                Engenharia de Software & Back-end
+                Engenheiro de Software Full-stack
+              </span>
+
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 border border-blue-500/20 text-blue-300">
+                <Layers className="w-3.5 h-3.5 text-blue-400" />
+                C#/.NET + Angular
               </span>
 
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 border border-purple-500/20 text-purple-300">
@@ -36,14 +41,14 @@ export function Hero() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-100 tracking-tight leading-[1.12]">
               Engenharia de Software,{' '}
               <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">
-                Back-end Resiliente
+                Full-stack (C#/.NET + Angular)
               </span>{' '}
               e Governança em IA.
             </h1>
 
             {/* Sub-headline */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
-              Olá, sou o <strong className="text-white font-semibold">{profileData.name}</strong>. Uno mais de 14 anos de vivência lógica em operações, estoques e dados corporativos com arquiteturas modernas de back-end (<span className="text-cyan-300">Python, C#/.NET, SQL</span>), APIs escaláveis e a vanguarda da colaboração humano-IA através do <span className="text-purple-300">Método Ágil C.H.</span>
+              Olá, sou o <strong className="text-white font-semibold">{profileData.name}</strong>. Atuo no ciclo completo de desenvolvimento Full-stack unindo <span className="text-cyan-300 font-medium">C#/.NET (ASP.NET Core, .NET 10 LTS) e Angular 22</span> a APIs assíncronas em <span className="text-indigo-300 font-medium">Python e Next.js</span>, sustentado por mais de 14 anos de vivência lógica corporativa e pelo pioneirismo do <span className="text-purple-300 font-medium">Método Ágil C.H.</span>
             </p>
 
             {/* Action Buttons */}
@@ -52,7 +57,7 @@ export function Hero() {
                 href="#projetos"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-300 hover:from-cyan-300 hover:to-teal-200 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                <span>Ver Projetos em Destaque</span>
+                <span>Ver Projetos Full-stack</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
@@ -104,7 +109,7 @@ export function Hero() {
                     <span className="w-3 h-3 rounded-full bg-amber-500/80"></span>
                     <span className="w-3 h-3 rounded-full bg-emerald-500/80"></span>
                   </div>
-                  <span className="text-[11px] font-mono text-slate-400">hallan@engineer:~</span>
+                  <span className="text-[11px] font-mono text-slate-400">hallan@fullstack:~</span>
                   <div className="text-[11px] font-mono text-cyan-400 bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-800/40">
                     Next.js 15
                   </div>
@@ -124,16 +129,16 @@ export function Hero() {
                       />
                     </div>
                     <div className="absolute -bottom-2 -right-2 bg-slate-950 border border-slate-700 text-xs px-2 py-0.5 rounded-full font-mono text-cyan-400 shadow">
-                      v2.0
+                      Full-stack
                     </div>
                   </div>
 
                   <h3 className="text-xl font-bold text-slate-100">{profileData.fullName}</h3>
                   <p className="text-xs font-mono text-cyan-400 mt-1">
-                    Python · C#/.NET · FastAPI · Clean Arch
+                    C#/.NET 10 · Angular 22 · Python · FastAPI
                   </p>
                   <p className="text-xs text-slate-400 mt-2 max-w-xs">
-                    PCD TEA · Operador Logística Jr → Pleno (Votorantim) · Graduando em Engenharia de Software
+                    Engenheiro de Software Full-stack · PCD TEA · Operador Logística Jr → Pleno (Votorantim)
                   </p>
                 </div>
 
@@ -144,16 +149,16 @@ export function Hero() {
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-xs">
                     <div className="bg-slate-950/80 border border-slate-800 p-2 rounded-lg">
+                      <span className="font-semibold text-slate-200 block truncate">PulseOps</span>
+                      <span className="text-[10px] text-teal-400 font-mono">.NET 10 · Angular 22</span>
+                    </div>
+                    <div className="bg-slate-950/80 border border-slate-800 p-2 rounded-lg">
                       <span className="font-semibold text-slate-200 block truncate">Maestro Router</span>
                       <span className="text-[10px] text-cyan-400 font-mono">FastAPI · OpenAI</span>
                     </div>
                     <div className="bg-slate-950/80 border border-slate-800 p-2 rounded-lg">
                       <span className="font-semibold text-slate-200 block truncate">DriveHub API</span>
                       <span className="text-[10px] text-indigo-400 font-mono">Clean Arch · DDD</span>
-                    </div>
-                    <div className="bg-slate-950/80 border border-slate-800 p-2 rounded-lg">
-                      <span className="font-semibold text-slate-200 block truncate">PulseOps</span>
-                      <span className="text-[10px] text-teal-400 font-mono">.NET 10 · Angular</span>
                     </div>
                     <div className="bg-slate-950/80 border border-slate-800 p-2 rounded-lg">
                       <span className="font-semibold text-slate-200 block truncate">CHDevFlow & ch</span>
@@ -173,7 +178,7 @@ export function Hero() {
               key={idx}
               className="p-5 rounded-2xl bg-slate-900/50 border border-slate-800/80 backdrop-blur-sm hover:border-slate-700 transition-colors"
             >
-              <div className="text-3xl sm:text-4xl font-extrabold text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text font-mono">
+              <div className="text-2xl sm:text-3xl font-extrabold text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text font-mono truncate">
                 {stat.value}
               </div>
               <div className="text-sm font-semibold text-slate-200 mt-1">

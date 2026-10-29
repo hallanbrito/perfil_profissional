@@ -52,7 +52,7 @@ export function Navbar() {
               </span>
               <span className="text-xs text-slate-400 font-mono flex items-center gap-1">
                 <Terminal className="w-3 h-3 text-cyan-400" />
-                <span>Dev · AI · Arch</span>
+                <span>Full-stack · .NET · Angular</span>
               </span>
             </div>
           </Link>
