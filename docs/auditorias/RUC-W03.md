@@ -1,11 +1,11 @@
-# Relatório Unificado de Conformidade (RUC) — W-03 (Fechamento AUD-W03-02)
+# Relatório Unificado de Conformidade (RUC) — W-03 (Homologação AUD-W03-03)
 
 **Projeto:** perfil_profissional  
 **Repositório:** [github.com/hallanbrito/perfil_profissional](https://github.com/hallanbrito/perfil_profissional)  
 **Fatia:** W-03 — Engenharia, Qualidade e Segurança  
 **Data:** 29 de outubro de 2026  
 **Autonomia:** CH-2 (Execução agêntica estrita, abertura de Draft PR, merge bloqueado aguardando homologação do PO)  
-**Referência da Auditoria Independente:** `AUD-W03-02` (Fechamento Técnico e Parecer de Segurança)  
+**Referência da Auditoria Independente:** `AUD-W03-03` (Aprovação Técnica e Validação Documental de Fechamento da W-03)  
 **Pull Request:** [Draft PR #22](https://github.com/hallanbrito/perfil_profissional/pull/22)  
 
 ---
@@ -15,6 +15,7 @@
 - **SHA Baseline (`master`):** `b8460f4dfa8fe03f2c67436af9fcecd4f2e47272`
 - **SHA Auditado Inicial (`AUD-W03-01`):** `3bee263c0244ad55ffcb8fe32f3193bf46e7fc02`
 - **SHA Revisão Pós-Auditoria 1:** `2c99c714904cebb6bef066dfd962be6d42366394`
+- **SHA Auditado e Aprovado (`AUD-W03-02 / AUD-W03-03`):** `5d124b9fd66cfb4b3525cf97e3842510ef9e559e`
 - **Branch de Trabalho:** `agy/w03-engenharia-qualidade-seguranca`
 - **Issues Cobertas:**
   - Issue-Mãe [#2](https://github.com/hallanbrito/perfil_profissional/issues/2) — [W-03] Engenharia, Qualidade e Segurança
@@ -23,13 +24,14 @@
   - Subissue [#5](https://github.com/hallanbrito/perfil_profissional/issues/5) — W03-03: CI com GitHub Actions
   - Subissue [#6](https://github.com/hallanbrito/perfil_profissional/issues/6) — W03-04: Auditoria de Segurança e Controles
 - **Relação entre Versões:**
-  - `3bee263`: Entrega inicial da infraestrutura de W-03.
-  - `2c99c71`: Atendimento às recomendações de rastreabilidade, asserções de segurança em testes, análise de anotações do CI e refinamento de ignores do ESLint.
-  - Versão atual (`AUD-W03-02`): Investigação e implementação do override seguro de PostCSS (`^8.5.32`), eliminando 100% das vulnerabilidades transitivas sem migração de major version do Next.js, atualização de checkboxes e governança para fechamento do gate.
+  - `3bee263`: Entrega inicial da infraestrutura de engenharia e testes de W-03.
+  - `2c99c71`: Atendimento às recomendações de rastreabilidade, asserções de integridade e segurança de testes em `ProjectsSection.test.tsx`, análise das anotações do CI e refinamento de ignores do ESLint.
+  - `5d124b9fd66cfb4b3525cf97e3842510ef9e559e`: Implementação e validação técnica do override de PostCSS (`^8.5.32`), eliminando 100% das vulnerabilidades transitivas sem migrar para o Next.js 16 (aprovado tecnicamente em `AUD-W03-03`).
+  - Commit Documental Final: Ajuste e consolidação formal de rastreabilidade de SHAs no repositório.
 
 ---
 
-## 2. Ações Corretivas e Investigação Técnica (`AUD-W03-02`)
+## 2. Ações Corretivas e Investigação Técnica (`AUD-W03-02` / `AUD-W03-03`)
 
 ### 2.1. Investigação do `overrides` de PostCSS
 - **Cenário inicial:** `next@15.5.28` utilizava internamente `postcss@8.4.31`, enquadrado nas vulnerabilidades GHSA-qx2v-qp2m-jg93, GHSA-6g55-p6wh-862q, GHSA-fxqj-rqcc-2cmp e GHSA-r28c-9q8g-f849 (`postcss <=8.5.22`).
