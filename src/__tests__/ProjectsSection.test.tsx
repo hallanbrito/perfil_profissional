@@ -36,9 +36,22 @@ describe('ProjectsSection Component', () => {
     expect(screen.queryByText('DriveHub API')).not.toBeInTheDocument();
   });
 
-  it('contains valid repository URLs for open-source projects', () => {
+  it('contains valid repository URLs and destinations for open-source projects', () => {
     render(<ProjectsSection />);
-    const pulseOpsRepo = screen.getAllByRole('link', { name: /Ver Repositório/i });
-    expect(pulseOpsRepo.length).toBeGreaterThan(0);
+    const repoLinks = screen.getAllByRole('link', { name: /Ver Repositório/i });
+    expect(repoLinks.length).toBeGreaterThan(0);
+
+    const hrefs = repoLinks.map((link) => link.getAttribute('href'));
+    expect(hrefs).toContain('https://github.com/hallanbrito/metodo-ch');
+    expect(hrefs).toContain('https://github.com/hallanbrito/PulseOps');
+    expect(hrefs).toContain('https://github.com/hallanbrito/maestro-router');
+    expect(hrefs).toContain('https://github.com/hallanbrito/DriveHub-API');
+    expect(hrefs).toContain('https://github.com/hallanbrito/CHDevFlow');
+
+    // Verify security attributes on repository links
+    repoLinks.forEach((link) => {
+      expect(link).toHaveAttribute('target', '_blank');
+      expect(link).toHaveAttribute('rel', expect.stringContaining('noopener'));
+    });
   });
 });
